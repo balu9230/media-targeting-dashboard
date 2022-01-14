@@ -1,0 +1,10 @@
+@import '../../global/styles.module.scss';
+
+.Body {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  background-color: $light-black;
+}

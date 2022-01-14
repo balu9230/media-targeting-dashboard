@@ -1,0 +1,63 @@
+.Section {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  font-size: small;
+  margin: .5rem;
+}
+
+.Heading {
+  align-self: flex-start;
+  color: white;
+  padding-top: .5rem;
+  padding-bottom: .5rem;
+}
+
+.Options {
+  align-self: stretch;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  border: .1rem solid white;
+  padding: .4rem;
+}
+
+// .Options:after{
+//   content: '';
+//   flex-grow: 50;
+// }
+
+.CheckOptionWrapper {
+  // align-content: flex-start;
+  padding-left: .2rem;
+  padding-right: .2rem;
+}
+
+.CheckOption {
+  cursor: pointer;
+}
+
+.LabelWrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: .3rem;
+  padding-left: .7rem;
+  padding-right: .7rem;
+}
+
+.LabelWrapper div {
+  padding-left: .3rem;
+}
+
+input.CheckOption {
+  display: none;
+}
+
+label.CheckOption {
+  color: white;
+}

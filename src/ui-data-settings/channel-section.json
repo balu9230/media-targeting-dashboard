@@ -1,0 +1,34 @@
+[
+  {
+    "name": "Offsite",
+    "checked": false
+  },
+  {
+    "name": "Onsite",
+    "checked": false
+  },
+  {
+    "name": "Coupon at Till",
+    "checked": false
+  },
+  {
+    "name": "Solo DM",
+    "checked": false  
+  },
+  {
+    "name": "Solo Email",
+    "checked": false
+  },
+  {
+    "name": "Solo Digital",
+    "checked": false 
+  },
+  {
+    "name": "SMS",
+    "checked": false
+  },
+  {
+    "name": "Facebook",
+    "checked": false
+  }
+]

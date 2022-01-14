@@ -1,0 +1,127 @@
+.CampaignInformation {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  font-size: small;
+  margin: .5rem;
+}
+
+.Heading {
+  align-self: flex-start;
+  color: white;
+  padding-top: .5rem;
+  padding-bottom: .5rem;
+}
+
+.CampaignInformationForm {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin: .2rem;
+  border: .1rem solid white;
+}
+
+.TextWrapper {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: .4rem;
+  margin-top: .2rem;
+  margin-bottom: .2rem;
+}
+
+.Label {
+  color: white;
+  margin-right: .5rem;
+}
+
+.TextField {
+  border: .05rem solid white;
+  min-width: 50%;
+  outline: none;
+  color: white;
+  background-color: #1a1a1a;
+  padding: .5rem;
+  padding-left: .3rem;
+  padding-right: .3rem;
+}
+
+.SwitchButtonWrapper {
+  min-width: 51%; 
+  // margin-right: .3rem;
+}
+
+.SwitchButton {
+  background: #333333;
+  border-radius: 5px;
+  overflow: hidden;
+  width: 60%;
+  text-align: center;
+  letter-spacing: 1px;
+  color: white;
+  position: relative;
+  padding-right: 40%;
+  position: relative;
+}
+
+.SwitchButton:before {
+  content: "Transaction Week";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 3;
+  pointer-events: none;
+}
+
+.SwitchButtonCheckbox {
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  z-index: 2;
+}
+
+.SwitchButtonCheckbox:checked + .SwitchButtonLabel:before {
+  transform: translateX(110%);
+  transition: transform 300ms linear;
+}
+
+.SwitchButtonCheckbox + .SwitchButtonLabel {
+  position: relative;
+  padding: .5rem;
+  display: block;
+  user-select: none;
+  pointer-events: none;
+}
+
+.SwitchButtonCheckbox + .SwitchButtonLabel:before {
+  content: "";
+  background: #808080;
+  height: 100%;
+  width: 80%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  border-radius: .3rem;
+  transform: translateX();
+  transition: transform 300ms;
+}
+
+.SwitchButtonCheckbox + .SwitchButtonLabel .SwitchButtonLabelSpan {
+  position: relative;
+  right: 2rem;
+}
